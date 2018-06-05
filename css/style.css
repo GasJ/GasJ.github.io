@@ -365,7 +365,7 @@ header.page5 .hover {
 
 .socials a+a {
 	margin-left: 18px;
-	background-position: -87px 0;
+	/* background-position: -87px 0; */
 }
 
 .socials a+a+a {
