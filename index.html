@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<!-- This is a website for my dear friend. - Ze, Lee -->
+
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>Lee</title>
+		<link rel="icon" href="images/333.png">
+		<link rel="shortcut icon" href="images/shabi.png" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/zerogrid.css" >
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/btn.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="menu_block">
+							<nav class="">
+								<ul class="sf-menu">
+									<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+									<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
+									<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Skills</a> <strong class="hover"></strong></li>
+									<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Portfolio</a> <strong class="hover"></strong></li>
+									<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/333.png" alt="home page"></a></h1>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slider_wrapper">
+							<ul class="items">
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>Ze Lee, a graphic designer. </h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>我也不知道自己在说什么，反正你们也看不懂</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>我知道怎么设计小可爱</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif" alt="">
+									<div class="caption banner">
+										<h2>其实你可以联系我画画～</h2>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="socials">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page2" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Professional <a onClick="goToByScroll('page3'); return false;" href="#"><span>Skills</span></a> <br> My <a onClick="goToByScroll('page4'); return false;" href="#"><em>Portfolio</em></a></h3>
+							<div class="text1">
+								<p>承接：原画设计、网站设计、微信公众号设计。</p>
+								<p>我就随便瞎写写，到时候再加吧。。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/box1.png" alt="">
+							<div class="text1"><a href=https://mp.weixin.qq.com/s/9ki5B_kvtyQxntDVizM0JA target="view_window">耳屎君的日常</a></div>美术顾问
+							<div class="socials1">
+								<p style="color:white">LIFE-LONG</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/box2.png" alt="">
+							<div class="text1">
+								<a onClick="goToByScroll('page3'); return false;" href="#">
+										<span>个人承接</span>
+									</a>
+							</div> 图片设计
+							<div class="socials1">
+								<p style="color:white">需预约</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/box3.png" alt="">
+							<div class="text1"><a href="http://www.yulonghorse.com.cn/" target="view_window">玉龙马业 </a></div>设计主管
+							<div class="socials1">
+								<p style="color:white">2014 十月 - 2018 一月</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/box4.png" alt="" height="50%">
+							<div class="text1"><a href="http://www.sharetimes.cn/" target="view_window">分享时代</a></div>IP设计师
+							<div class="socials1">
+								<p style="color:white">2018 三月 - 至今</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Skills - 技能点</h3>
+							<div class="text1">
+								<p>设计必备: PHOTOSHOP, AI, ID, CDR</p>
+								<p>办公必备: Microsoft office tool, UNIX, Windows</p>
+								<p>沟通技能: 中英双语，自带微笑(⁎⁍̴̛ᴗ⁍̴̛⁎)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+						<div class="box maxheight1">
+							<img src="images/box1_img1.png" alt="">
+							<div class="text1"><a href="#">原创</a></div>想象力是绘画的基础。
+						</div>
+				</div>
+				<div class="col-1-4">
+						<div class="box maxheight1">
+							<img src="images/box1_img2.png" alt="">
+							<div class="text1"><a href="#">精细</a></div>美术功底是还原想象的基础。
+						</div>
+				</div>
+				<div class="col-1-4">
+						<div class="box maxheight1">
+							<img src="images/box1_img3.png" alt="">
+							<div class="text1"><a href="#">幼儿</a></div>我编不下去了嘛，又没人帮我。
+						</div>
+				</div>
+				<div class="col-1-4">
+						<div class="box maxheight1">
+							<img src="images/box1_img4.png" alt="">
+							<div class="text1"><a href="#">沟通</a></div>为灵感而创作，为客户而服务。
+						</div>
+				</div>
+			</div>
+		</div>
+		<div id="page4" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>Portfolio - 作品集</h3>
+					</div>
+				</div>
+				<div class="works">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/plant2.png" alt="">
+							<div class="text1">Company Name</div>Aliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesent.
+							<br>
+							<a href="images/plant2.png" target="view_window">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo2.png" alt="">
+							<div class="text1">Company Name</div>Fusce adipiscing quam id risus gittis, non consequat lacus interdumoin.
+							<br>
+							<a href="images/logo2.png">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/plant3.png" alt="">
+							<div class="text1">Company Name</div>Quisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus um.
+							<br>
+							<a href="images/plant3.png">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/plant.png" alt="">
+							<div class="text1">Company Name</div>Courrewerwe abitur vel lorem sit amet ulla ullamcorper fermentumn vitae.
+							<br>
+							<a href="#">大图打开</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/logo5.png" alt="">
+							<div class="text1">Company Name</div>Oiliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesente.
+							<br>
+							<a href="images/logo5.png">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/pluto.jpg" alt="">
+							<div class="text1">Company Name</div>Gusce adipiscing quam id risus gittis, non consequat lacus interdumoiju.
+							<br>
+							<a href="images/pluto.jpg">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/oneDay.jpg" alt="">
+							<div class="text1">Company Name</div>Niuisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus ol.
+							<br>
+							<a href="images/oneDay.jpg">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/car.jpg" alt="">
+							<div class="text1">Company Name</div>Fouerourrewerwe abitur vel lorem sit amet ulla ullamcorper fermentum.
+							<br>
+							<a href="images/car.jpg">大图打开</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+							<div class="wrap-col">
+								<img src="images/car.jpg" alt="">
+								<div class="text1">Company Name</div>Fouerourrewerwe abitur vel lorem sit amet ulla ullamcorper fermentum.
+								<br>
+								<a href="images/car.jpg">大图打开</a>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Get in Touch - 联系我</h3>
+							<div class="text1">
+								网站主人已经跑路啦，有事请留言。
+								<br><br>
+								留言也不一定看得到，反正服务器总是崩坏。
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+					<div class="col-full">
+						<div class="wrap-col">
+							<div class="btns"><a href="mailto:bubu825@live.cn?subjext=Msg%20From%20Your%20Website">Send</a>
+							<!-- <div class="clear"></div> -->
+							</div>
+						</div>
+				
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="zerogrid">
+				<div class="col-full">
+					 <div class="wrap-col">
+						<div class="copy">
+							@(・●・)@快乐咸鱼每一天  
+						</div>
+					</div>
+				</div>
+				<!-- <div class="clear"></div> -->
+			</div>
+		</footer>
+	</body>
+</html>

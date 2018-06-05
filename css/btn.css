@@ -1,0 +1,25 @@
+
+.btns {
+	position: center;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.btns a {
+	display: inline-block;
+	font-size: 19px;
+	line-height: 18px;
+	background-color: #f17c72;
+	border: 1px solid #b76058;
+	min-width: 107px;
+	padding: 5px 10px 6px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btns a:hover {
+	background-color: #c2e8f4;
+	border-color: #3c7f9f;
+	color: #39596e;
+}
+
