@@ -14,16 +14,20 @@
 		<link rel="stylesheet" href="css/camera.css">
 		<link rel="stylesheet" href="css/btn.css">
 		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/light-box.css">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery-migrate-1.1.1.js"></script>
 		<script src="js/superfish.js"></script>
-		<script src="js/forms.js"></script>
 		<script src="js/jquery.ui.totop.js"></script>
 		<script src="js/jquery.equalheights.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/jquery.ui.totop.js"></script>
 		<script src="js/tms-0.4.1.js"></script>
 		<script src="js/css3-mediaqueries.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 		<script>
 			$(document).ready(function(){
 				$('.slider_wrapper')._TMS({
@@ -129,7 +133,13 @@
 							</ul>
 						</div>
 						<div class="socials">
-							<a href="#"></a>
+							<a href="https://weibo.com/512517012" target="_blank">
+								我的微博
+							</a>
+
+							<a onClick="goToByScroll('page5'); return false;" href="#">
+								给我留言
+							</a>
 						</div>
 					</div>
 				</div>
@@ -238,7 +248,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="page4" class="content">
+		<div id="page4" class="content">	
 			<div class="zerogrid">
 				<div class="col-full">
 					<div class="wrap-col">
@@ -248,75 +258,132 @@
 				<div class="works">
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/plant2.png" alt="">
-							<div class="text1">Company Name</div>Aliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesent.
+							<a href="images/w1.png" data-lightbox="image-1">
+								<img src="images/w1.png" alt="">
+							</a>
+							<div class="text1">万圣节，我饿</div>这是一个万圣节海报。
 							<br>
-							<a href="images/plant2.png" target="view_window">大图打开</a>
+							<a href="images/w1.png" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/logo2.png" alt="">
-							<div class="text1">Company Name</div>Fusce adipiscing quam id risus gittis, non consequat lacus interdumoin.
+							<a href="images/w2.png" data-lightbox="image-1">
+								<img src="images/w2.png" alt="">
+							</a>
+							<div class="text1">小狮子</div>可爱的小狮子。
 							<br>
-							<a href="images/logo2.png">大图打开</a>
+							<a href="images/w2.png" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/plant3.png" alt="">
-							<div class="text1">Company Name</div>Quisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus um.
+							<a href="images/w3.png" data-lightbox="image-1">
+								<img src="images/w3.png" alt="">
+							</a>
+							<div class="text1">万圣节，礼物</div>是没有的。
 							<br>
-							<a href="images/plant3.png">大图打开</a>
+							<a href="images/w3.png" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/plant.png" alt="">
-							<div class="text1">Company Name</div>Courrewerwe abitur vel lorem sit amet ulla ullamcorper fermentumn vitae.
+							<a href="images/w4.png" data-lightbox="image-1">
+								<img src="images/w4.png" alt="">
+							</a>
+							<div class="text1">万圣节，还饿</div>其实我总是饿。
 							<br>
-							<a href="#">大图打开</a>
+							<a href="images/w4.png" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="clear"></div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/logo5.png" alt="">
-							<div class="text1">Company Name</div>Oiliquam nibh ante, egestas id dictum  wrecommodo luctus liberoaesente.
+							<a href="images/w5.jpg" data-lightbox="image-1">
+								<img src="images/w5.jpg" alt="">
+							</a>
+							<div class="text1">饥荒</div>新人物，pluto。
 							<br>
-							<a href="images/logo5.png">大图打开</a>
+							<a href="images/w5.jpg" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/pluto.jpg" alt="">
-							<div class="text1">Company Name</div>Gusce adipiscing quam id risus gittis, non consequat lacus interdumoiju.
+							<a href="images/w6.jpg" data-lightbox="image-1">
+								<img src="images/w6.jpg" alt="">
+							</a>
+							<div class="text1">海报</div>没什么想说的。
 							<br>
-							<a href="images/pluto.jpg">大图打开</a>
+							<a href="images/w6.jpg" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/oneDay.jpg" alt="">
-							<div class="text1">Company Name</div>Niuisque viverra nulla nunc, eu ultrices wertlibero ultricies egetasellus ol.
+							<a href="images/w7.jpg" data-lightbox="image-1">
+								<img src="images/w7.jpg" alt="">
+							</a>
+							<div class="text1">麋鹿动物园</div>麋鹿会不会迷路。
 							<br>
-							<a href="images/oneDay.jpg">大图打开</a>
+							<a href="images/w7.jpg" target="view_window">原图打开</a>
 						</div>
 					</div>
 					<div class="col-1-4">
 						<div class="wrap-col">
-							<img src="images/car.jpg" alt="">
-							<div class="text1">Company Name</div>Fouerourrewerwe abitur vel lorem sit amet ulla ullamcorper fermentum.
+							<a href="images/w8.jpg" data-lightbox="image-1">
+								<img src="images/w8.jpg" alt="">
+							</a>
+							<div class="text1">狮子们</div>长大的农民狮子👩‍🌾。
 							<br>
-							<a href="images/car.jpg">大图打开</a>
+							<a href="images/w8.jpg" target="view_window">原图打开</a>
 						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="col-1-4">
+							<div class="wrap-col">
+								<a href="images/w9.jpg" data-lightbox="image-1">
+									<div class = "hehe">
+											<img src="images/w9.jpg" alt="">
+									</div>
+								</a>
+								<div class="text1">凑数照片</div>黄色的车。
+								<br>
+								<a href="images/w9.jpg" target="view_window">原图打开</a>
+							</div>
 					</div>
 					<div class="col-1-4">
 							<div class="wrap-col">
-								<img src="images/car.jpg" alt="">
-								<div class="text1">Company Name</div>Fouerourrewerwe abitur vel lorem sit amet ulla ullamcorper fermentum.
+								<a href="images/w10.png" data-lightbox="image-1">
+									<div class = "hehe">
+											<img src="images/w10.png" alt="">
+									</div>
+								</a>
+								<div class="text1">黑化大狮子</div>老铁，去喝酒啊～？
 								<br>
-								<a href="images/car.jpg">大图打开</a>
+								<a href="images/w10.png" target="view_window">原图打开</a>
+							</div>
+					</div>
+					<div class="col-1-4">
+							<div class="wrap-col">
+								<a href="images/w11.png" data-lightbox="image-1">
+									<div class = "hehe">
+											<img src="images/w11.png" alt="">
+									</div>
+								</a>
+								<div class="text1">城乡结合部狮子</div>刚刚进城的王铁蛋
+								<br>
+								<a href="images/w11.png" target="view_window">原图打开</a>
+							</div>
+					</div>
+					<div class="col-1-4">
+							<div class="wrap-col">
+								<a href="images/w12.png" data-lightbox="image-1">
+									<div class = "hehe">
+										<img src="images/w12.png" alt="">
+									</div>
+								</a>
+								<div class="text1">装正经狮子</div>曾被评价为 一言难尽
+								<br>
+								<a href="images/w12.png" target="view_window">原图打开</a>
 							</div>
 					</div>
 					
@@ -333,6 +400,14 @@
 								网站主人已经跑路啦，有事请留言。
 								<br><br>
 								留言也不一定看得到，反正服务器总是崩坏。
+								<br><br>
+								还有这个按钮只有有outlook才打得开喔(￣◇￣;)
+								<br><br>
+								骗你的。
+								<br><br>
+								有客户端的邮箱就行啦wwww@(・●・)@
+								<br><br>
+								可爱的人，开得更快喔。（≧∇≦）
 							</div>
 						</div>
 					</div>
